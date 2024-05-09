@@ -1,0 +1,17 @@
+theorem:bu algoritma genel bekleme süresini minumum düzeyde çzöer.
+proof:
+
+
+1. **Açgözlü Olmayan Optimal Program Varlığına Varsayım**: Diyelim ki işlerin bir listesi var ve bu işleri en iyi şekilde planlayacak bir program arıyoruz. Bir varsayım olarak, bu programa uymayan, yani açgözlü bir yaklaşımı takip etmeyen bir programın var olduğunu düşünelim.
+
+2. **Farklı İlk İş (J)yi Belirleme**: Bu varsayımsal programda, açgözlü yaklaşımın ilk iş seçiminden farklı olan ilk işi bulalım. Mesela, açgözlü program ilk iş olarak A'yı seçerken, varsayımsal program ilk iş olarak B'yi seçmiş olabilir.
+
+3. **Açgözlü Programdaki (J)nin Pozisyonunu Düşünme**: Varsayımsal programda, iş B'nin açgözlü programa göre daha sonraki bir zamanda planlandığını görelim. Yani, açgözlü programda iş A'dan sonra tamamlanan işler varken, varsayımsal programda iş B'den önce tamamlanan işler bulunuyor.
+
+4. **(J)yi Açgözlü Programdaki İşle Değiştirme**: İşte burada, iş B'yi iş A'nın yerine koyabiliriz. Çünkü açgözlü programda iş A'dan önce biten işler olduğu için, iş B'nin oraya yerleştirilmesi herhangi bir aşım ihlali yapmaz ve toplam kârı azaltmaz.
+
+5. **Açgözlü Programa Dönüşüm**: İşte bu değişimle, varsayımsal programın açgözlü bir programa dönüştürülebileceğini görüyoruz. Yani, açgözlü programa uygun bir şekilde planlanmayan bir programın, açgözlü programa dönüştürülmesi mümkündür ve bu dönüşüm kârı azaltmaz.
+
+6. **Açgözlü Programın Optimal Olarak Sonuçlandığına İlişkin Sonuç Çıkarma**: Herhangi bir programın, açgözlü programa dönüştürülebileceğini ve kârın azaltılmadan gerçekleştirilebileceğini gördüğümüze göre, açgözlü programın en az diğer herhangi bir programa kadar iyi olduğunu kabul edebiliriz. Dolayısıyla, açgözlü programın optimal olduğunu söyleyebiliriz.
+
+Bu örneklerle desteklenmiş açıklama, herhangi bir programın açgözlü programa dönüştürülebileceğini ve bu dönüşümün kârı azaltmadığını göstererek açgözlü programın optimal olduğunu kanıtlar.

@@ -1,0 +1,11 @@
+Greedy-Job-Scheduling-Algorithm(I = ⟨t1,t2,··· ,tn⟩){
+    // İş listesini artan sırayla sırala
+    Sort I in nondecreasing order, say I = ⟨ti1,ti2,··· ,tin⟩;
+
+    // Sıralı düzende işleri gerçekleştir
+    While(I != 0){
+        x ← First element of I;  // İş listesinin ilk elemanını seç
+        I ← I − { x};  // İlk işi listeden çıkar
+        Performs the job x;  // İşi gerçekleştir
+    }
+}

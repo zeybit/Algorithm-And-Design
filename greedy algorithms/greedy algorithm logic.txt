@@ -1,0 +1,13 @@
+Greedy − Algorithm (Set C){//candidate aday kümesi 
+    S ←0;  // Initialize an empty set S (solution kümesi)
+    While (not Solution(S) and C != 0){  // Continue until a solution is found or C is empty
+        x ← Select (C);  // Select an element x from C
+        C ← C −{x };  // Remove x from C
+        if (Feasible(S ∪ {x })){  // Check if adding x to S maintains feasibility
+            S ← S ∪ {x };  // Add x to S
+        }
+    }
+    if (Solution(S)) return(S);  // Return the solution set S if found
+    else return(”nosolution”);  // Return "No solution" if no solution is found
+}
+// 

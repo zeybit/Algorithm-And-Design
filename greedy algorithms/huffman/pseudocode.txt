@@ -1,0 +1,11 @@
+Huffman_Kodla(frekanslar):
+    Q <- öncelikli kuyruk(frekanslar) // Frekanslara göre sıralı öncelikli kuyruk oluştur
+    while Q'da birden fazla eleman var:
+        x <- öncelikli_kuyrukten_en_düşük(Q) // En az frekansa sahip ilk elemanı al
+        y <- öncelikli_kuyrukten_en_düşük(Q) // Bir sonraki en az frekansa sahip elemanı al
+        yeni_düğüm <- YeniDüğüm_oluştur(x, y) // Bu iki düğümün birleştirilmesiyle yeni bir düğüm oluştur
+        yeni_düğümün_frekansı <- x'in_frekansı + y'in_frekansı // Yeni düğümün frekansı, birleştirilen düğümlerin frekanslarının toplamıdır
+        yeni_düğümün_sol <- x // Yeni düğümün sol alt ağacı x olacak şekilde ayarla
+        yeni_düğümün_sağ <- y // Yeni düğümün sağ alt ağacı y olacak şekilde ayarla
+        öncelikli_kuyruğa_ekle(Q, yeni_düğüm) // Yeni düğümü öncelikli kuyruğa ekle
+    return Q'da_tek_eleman // Kalan tek düğümü döndür, bu ağacın kökü olacak ve Huffman ağacını temsil edecek

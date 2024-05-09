@@ -1,0 +1,30 @@
+▪ Each character appears with some frequency in a text.
+▪ A binary code assigns a string of 0s and 1s to each character in 
+the alphabet.
+▪ A binary code is prefix-free if no code is a prefix of any other.(karakter<-->değer)
+▪ Any prefix-free binary code can be visualized as a binary tree with
+the encoded characters stored at the leaves.
+▪ The code word for any symbol is given by the path from the root to
+the corresponding leaf; 0 for left, 1 for right.
+▪ The length of a codeword for a symbol is the depth of the 
+corresponding leaf.
+▪ Fixed-length code: where a fixed-length code is assigned to each 
+character.
+▪ Variable-length code: can do considerably better than a fixedlength code, by giving frequent characters short codewords and
+infrequent characters long codewords
+
+Fixed-length : sıklığı farklı olsa bile her karaktere aynı uzunlukta bit
+Variable-length : sıklığa göre değişir uzunluk ;sıklığı az olana uzun bit
+
+
+
+(Optimal Code Tree)
+
+B(T)= ∑ 𝑓(𝑐) *𝑑𝑇(𝑐)
+     𝑐∈C
+
+c=Cnin elemanı
+T=binary tree 
+C=alfabe
+
+d(t)=cnin derinlik binary treedeki
