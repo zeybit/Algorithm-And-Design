@@ -1,0 +1,9 @@
+procedure Bubble_sort(int array)
+    for(pass=1; pass<=n; pass++)
+        for(index=0; index <= n-1-pass; index++)
+            if(array[index] > array[index+1])
+                swap(array[index], array[index+1])
+            end if
+        end for
+    end for
+end procedure
